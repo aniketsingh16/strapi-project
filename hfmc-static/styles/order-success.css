@@ -1,0 +1,11 @@
+.order-success {
+    display: grid;
+    grid-row-gap: 15px;
+   
+}
+
+
+.order-success h3 strong {
+    color: var(--primary-color);
+    font-size: 1.2em;
+}

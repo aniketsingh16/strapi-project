@@ -1,0 +1,120 @@
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    inset: 0 0 0 0;
+
+    background-color: #eff2f7b4;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.modal img {
+    width: 100%;
+}
+.modal-wrapper {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    max-width: 900px;
+    padding: 50px 0;
+    background-color: #EFF2F7;
+    -webkit-box-shadow: 0px 5px 28px 0px rgba(201,201,201,1);
+    -moz-box-shadow: 0px 5px 28px 0px rgba(201,201,201,1);
+    box-shadow: 0px 5px 28px 0px rgba(201,201,201,1);
+}
+
+.modal-wrapper article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 25px;
+}
+
+.modal-wrapper figure {
+    max-width: 450px;
+    margin: auto;
+}
+.modal-wrapper img {
+    width: 100%;
+}
+
+.modal button.loading {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+.modal form h5 {
+    margin: 1rem 0 0.4rem 0;
+    font-weight: 500;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+@media (max-width : 769px) {
+   .modal-wrapper article {
+        grid-template-columns: none; 
+   }
+}
+.modal form {
+    border: none;
+    display: flex;
+    padding : none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: transparent;
+}
+
+.modal input {
+    border-bottom: 1px solid var(--primary-color);
+    max-width: 300px;
+    width: 90%;
+    padding: 10px 1px;
+    font-size: 1rem;
+    background: transparent !important;
+}   
+
+
+.modal .details {
+    width: 100%;
+    max-width: 450px;
+    padding : 30px 0 0 0 1rem;
+    margin: 0 auto;
+}
+
+.modal .details h3{
+    font-size: 2rem;
+}
+.modal .details p{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.modal .details h4 {
+    font-size: 1.4rem;
+}
+
+
+.modal .close-btn {
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal form{
+    margin-top: 0.5rem;
+}
+.modal form button {
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem ;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}

@@ -1,0 +1,153 @@
+@import "./navbar.css";
+@import "./mobile-search.css";
+
+.header li {
+    list-style-type: none;
+}
+/* HEADER CSS */
+header {
+    box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
+
+}
+header .headline {
+    background-color: #0f3460;
+    color: #ffffff;
+}
+
+
+header .headline li  {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    
+}
+header .headline li span {
+    display: inline-block;
+}
+
+header .headline .links {
+    display: flex;
+    gap: 1rem;
+}
+
+header .headline_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0;
+
+}
+
+header .headline .contacts ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+@media (max-width : 992px) {
+    header .headline {
+        display: none;
+    }
+}
+
+
+.search-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+
+#search .logo {
+    width: 150px;
+}
+
+#search .search-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 80px;
+    height: 20px;
+    padding: 0.8rem 1rem;
+    gap: 0.8rem;
+    
+}
+
+.search-box span {
+    min-width: max-content;
+    padding: 0 0.5rem;
+    position: relative;
+}
+
+.search-box span::before {
+    position: absolute;
+    content: "";
+    height: 48px;
+    background-color: rgb(216, 216, 216);
+    width: 1px;
+    left: -7px;
+    top: -15px;
+}
+.search-box input {
+    width: 100%;
+    font-size: 1rem;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+#search .search-box .search-icon {
+    opacity: 0.8;
+}
+
+#search .logo img {
+    transform: translateX(-35px);
+}
+
+#search .icon, #mobile-search .icon {
+    width: 100px;
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+#mobile-search .icon {
+    width: 75px;
+}
+
+
+#search .icon>div, #mobile-search .icon>div {
+    background-color: #F3F5F9;
+    border-radius: 100%;
+    height: 50px;
+    min-width: 50px !important;
+    max-width: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search .cart {
+    position: relative;
+}
+.cart-items-num {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    background-color: #0f3460;
+    color: #ffffff;
+    height: 25px;
+    width: 25px;
+    font-size: 0.9rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

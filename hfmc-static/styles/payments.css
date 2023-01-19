@@ -1,0 +1,26 @@
+.payments-page h3, .payments-page h4, .payments-page h5 {
+
+    margin: 1.2rem 0 1rem 0;
+    font-size: 1.2rem;
+
+}
+
+.payments-page p{
+
+    margin: 0.8rem 0;
+    line-height: 1.5em;
+    opacity: 0.8;
+
+}
+
+.payments-page .wrapper {
+    padding: 0 16px;
+}
+
+.payments-page li {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding-left: 0.5rem;
+    margin: 0.4rem 0;
+    opacity: 0.8;
+}

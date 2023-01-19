@@ -1,0 +1,1 @@
+export const getBaseUrl = () => 'https://hfmc-static-cms.herokuapp.com'

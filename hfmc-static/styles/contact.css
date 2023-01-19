@@ -1,0 +1,57 @@
+
+
+.contact h1 {
+
+    font-size: 3rem;
+
+}
+
+.contact-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    max-width: 500px;
+    margin-top: 2rem;
+}
+
+@media (max-width : 768px) {
+    .contact-icons {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-icon {
+
+}
+.contact-icon h3 {
+    margin : 0.5rem 0;
+}
+.contact-icon .desc p {
+    text-align: left;
+}
+
+.contact-socials {
+    margin-top: 3rem;
+
+}
+
+.contact-socials h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact .social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact .wrapper {
+    display: flex;
+}
+
+@media (max-width : 768px) {
+    .contact .wrapper {
+        flex-direction: column;
+    }
+    
+}

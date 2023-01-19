@@ -1,0 +1,71 @@
+.order-form {
+    position: absolute;
+    inset: 0 0 0 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(255, 255, 255, 0.555);
+    
+}
+
+.order-form form, .order-form input{
+    display: block;
+    font-family: "Inter", sans-serif;
+}
+
+.order-form>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.order-form h2 {
+    margin-bottom: 1rem;
+}
+
+.order-form form {
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    /* height: 90vh; */
+    overflow: scroll;
+    margin: auto;
+    padding: 40px 20px 20px 20px;
+    box-shadow: 0px 4px 23px -3px rgba(110,110,110,0.75);
+    -webkit-box-shadow: 0px 4px 23px -3px rgba(110,110,110,0.75);
+    -moz-box-shadow: 0px 4px 23px -3px rgba(110,110,110,0.75);
+
+}
+
+.order-form form .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.order-form form button {
+    background-color: var(--primary-color);
+    padding: 0.6rem 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    
+}
+
+.order-form form button.loading {
+    cursor: not-allowed;
+}
+
+.order-form input {
+    border-bottom: 1px solid gray;
+    padding: 0.5rem 0rem;
+    font-size: 1rem;
+
+}
+
+.order-form h5 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+    opacity: 0.8;
+}
